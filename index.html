@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .grid-container{
+                display:grid;
+                grid-template-columns: auto auto auto;
+                background-color: #2196f3;
+                gap: 50px;
+                padding: 10px;
+                /* grid-template-rows: 80px, 200px; */
+                /* justify-content: space-around; */
+                /* justify-content:space-around; */
+                /* justify-content:space-between; */
+                /* justify-content:space-evenly; */
+                /* justify-content:center; */
+                /* justify-content:start; */
+            }
+            .grid-item{
+                background-color: rgba(255, 255, 255, 0.8);                
+                text-align: center;
+                padding: 20px;
+                font-size: 30px;
+               
+
+            }
+            /* .item8
+            {
+
+                grid-area: 1/2/5/6;
+            } */
+            .item1{
+                grid-column: 1/span 2;
+                grid-row: 1;
+            }
+            .item2{
+                grid-column: 3;
+                grid-row: 1/span 3;
+            }
+            .item5{
+                grid-column: 1/span 3;
+                grid-row: 3;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Grid Element</h1>
+        <p>A Grid Layout must have a parent element with the display property set to grid or inline grid.</p>
+        <div class="grid-container">
+            <div class="grid-item item1">1</div>
+            <div class="grid-item item2">2</div>
+            <div class="grid-item item3">3</div>
+            <div class="grid-item item4">4</div>
+            <div class="grid-item item5">5</div>
+                     
+
+
+        </div>
+    </body>
+</html>
